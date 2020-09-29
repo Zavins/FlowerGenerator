@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="./main.css" />
-		<script src="./release.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="./css/main.css" />
 		
-		<!-- <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
-		 -->
+		<script src="./js/release.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- <script src="./js/main.js" type="text/javascript" charset="utf-8"></script> -->
 		<title>Flower Generator</title>
 	</head>
 	<body>
@@ -14,6 +14,7 @@
 		<div id="panel">
 			<div id="title">
 				<h1>Flower Generator</h1>
+				<span>By @Zavins<span id="name">(Zhi Yuan Wang)</span></span>
 			</div>
 			<div id="control">
 				<!-- shape used to draw flowers -->
@@ -44,7 +45,7 @@
 				<div>
 					<label for="petals">Petals: </label>
 					<span>#</span>
-					<input id="petals" class="input_item" type="number" min="0" max="100" step="1" value="6">
+					<input id="petals" class="input_item" type="number" min="3" max="100" step="1" value="6">
 				</div>
 
 				<!-- angle of the flower -->
@@ -52,7 +53,7 @@
 					<label for="angle">Angle: </label>
 					<input id="angle" class="input_item" type="number" min="0" max="360" step="1" value="0" onchange="change_angle(this.value, 1)">
 					<span>°</span>
-					<input id="angle_slider" class="input_item" type="range" min="0" max="360" value="0" onmousemove="change_angle(this.value, 2)">
+					<input id="angle_slider" class="input_item" type="range" min="0" max="360" value="0" onmousemove="change_angle(this.value, 2)" onchange="change_angle(this.value, 2)">
 				</div>
 
 				<!-- color of the flowers -->
@@ -65,7 +66,7 @@
 				<div>
 					<label for="transparency">Transparency: </label>
 					<input id="transparency" class="input_item" type="number" min="0" max="1" step="0.01" value="1" onchange="change_transparency(this.value, 1)">
-					<input id="transparency_slider" class="input_item" type="range" min="0" max="1" step="0.01" value="1" onmousemove="change_transparency(this.value, 2)">
+					<input id="transparency_slider" class="input_item" type="range" min="0" max="1" step="0.01" value="1" onmousemove="change_transparency(this.value, 2)" onchange="change_transparency(this.value, 2)">
 				</div>
 
 				<!-- rainbow or no -->

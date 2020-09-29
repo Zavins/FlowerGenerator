@@ -29,7 +29,10 @@ body {
 
 h1 {
 	font-size: 48px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
+
 
 label {
 	margin-left: 10px;
@@ -131,6 +134,14 @@ button {
 	background: #aaaa7f;
 	outline: none;
 	opacity: 1;
+}
+
+#color:disabled{
+	cursor: no-drop;
+}
+
+#name{
+	font-size: 10px;
 }
 
 
