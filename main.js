@@ -32,6 +32,7 @@ function init() {
 }
 
 function set_canvas_size() {
+	if(!canvas) return;
 	clear_canvas();
 	//clear canvas before setting canvas
 	canvas.width = canvas.offsetWidth;
