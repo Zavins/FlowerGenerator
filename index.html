@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="./main.css" />
+		<link rel="stylesheet" type="text/css" href="./css/main.css" />
 		
-		<script src="./release.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/release.js" type="text/javascript" charset="utf-8"></script>
 		
 		<!-- <script src="./js/main.js" type="text/javascript" charset="utf-8"></script> -->
 		<title>Flower Generator</title>
@@ -17,6 +17,11 @@
 				<span>By @Zavins<span id="name">(Zhi Yuan Wang)</span></span>
 			</div>
 			<div id="control">
+				<!-- color of canvas -->
+				<div>
+					<label for="color">Background Color: </label>
+					<input id="background_color" class="input_item" type="color" value="#d0c570" onchange="change_background()">
+				</div>
 				<!-- shape used to draw flowers -->
 				<div>
 					<label for="shape">Shape: </label>
@@ -82,11 +87,14 @@
 						<button id="generate" class="input_item" type="button">Generate</button>
 						<button id="clear" class="input_item" type="button">Clear</button>
 						<button id="generate_random" class="input_item" type="button">Generate Random</button>
+						<button id="export" class="input_item" type="button">Export Art</button>
+						<a id="download"></a>
 					</center>
 				</div>
 			</div>
 		</div>
 		<canvas id="world"></canvas>
+		<canvas id="export_canvas"></canvas>
 		<img id="arrow" src="https://pngimg.com/uploads/red_arrow/red_arrow_PNG1.png" width="32px" height="32px">
 		<img id="aim" src="https://pngimg.com/uploads/aim/aim_PNG42.png" width="24px" height="24px">
 	</body>
