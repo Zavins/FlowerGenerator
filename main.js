@@ -6,7 +6,6 @@
  *    ███████╗██║  ██║ ╚████╔╝ ██║██║ ╚████║███████║
  *    ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝  ╚═══╝╚══════╝
  *                                                  
- * Project For Applied Computing Monthly App Challenge.
  */
 
 
@@ -437,8 +436,3 @@ function hsv_to_rgb(h, s, v) {
 //Initialize
 window.onload = init;
 window.onresize = set_canvas_size;
-alert("This project is created by Zavins(Zhi Yuan Wang) "+
-"for Applied Computing Monthly Challenge!\n\n"+
-"Use: Move the aim/pivot and change the properties(or click 'Generate Random') to make your beautiful flower art!\n"+
-"Click 'Export Art' to save your art!"
-);
